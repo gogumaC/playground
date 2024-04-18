@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "kr.co.gogumac.playgroundforandroid"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "kr.co.gogumac.playgroundforandroid"
