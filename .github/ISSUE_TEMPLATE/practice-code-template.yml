@@ -1,0 +1,34 @@
+name: Practice code
+description: 공부하다 생긴 코드 정리
+title: "[] "
+labels: ["practice"]
+assignees:
+  - gogumac
+body:
+  - type: input
+    id: branch
+    attributes:
+      label: branch name
+      description: 해당 예제 코드가 있는 브랜치
+      placeholder: ex. feat/XXXX
+    validations:
+      required: true
+  - type: input
+    id: code-link
+    attributes:
+      label: code link
+      description: 해당 코드의 링크
+    validations:
+      required: true
+  - type: input
+    id: study-link
+    attributes:
+      label: study link
+      description: 공부한 내용 링크
+  - type: textarea
+    id: etc
+    attributes:
+      label: etc
+      description: 기타 추가사항
+
+
