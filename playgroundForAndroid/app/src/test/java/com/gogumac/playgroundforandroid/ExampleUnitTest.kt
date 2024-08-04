@@ -1,4 +1,4 @@
-package kr.co.gogumac.playgroundforandroid
+package com.gogumac.playgroundforandroid
 
 import org.junit.Test
 

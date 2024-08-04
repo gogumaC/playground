@@ -1,4 +1,4 @@
-package kr.co.gogumac.playgroundforandroid
+package com.gogumac.playgroundforandroid
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("kr.co.gogumac.playgroundforandroid", appContext.packageName)
+        assertEquals("com.gogumac.playgroundforandroid", appContext.packageName)
     }
 }
