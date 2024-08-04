@@ -52,6 +52,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    
+    //navigation
+    val nav_version = "2.8.0-beta06"
+    api("androidx.navigation:navigation-fragment-ktx:$nav_version")
 
     //serialization
     implementation(libs.kotlinx.serialization.json)
