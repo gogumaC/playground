@@ -73,4 +73,8 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1")
+
+    val nav_version = "2.8.0-beta06"
+
+    implementation("androidx.navigation:navigation-compose:$nav_version")
 }
