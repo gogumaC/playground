@@ -17,6 +17,10 @@ android {
         }
     }
 
+    buildFeatures {
+        viewBinding=true
+    }
+
     defaultConfig {
         applicationId = "com.gogumac.playgroundforandroid"
         minSdk = 26
