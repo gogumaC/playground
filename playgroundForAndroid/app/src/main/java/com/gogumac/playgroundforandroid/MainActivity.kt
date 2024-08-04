@@ -5,6 +5,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.navigation.createGraph
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.fragment
 import com.gogumac.playgroundforandroid.databinding.ActivityMainBinding
 import kotlinx.serialization.Serializable
 
@@ -26,5 +30,18 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        navController.graph=navController.createGraph(
+            startDestination= ScreenA
+        ){
+            fragment<ScreenAFragment,ScreenA>{
+                label="Screen A"
+            }
+            fragment<ScreenBFragment,ScreenB>{
+                label="Screen B"
+            }
+        }
     }
 }
