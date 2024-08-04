@@ -12,6 +12,12 @@ import kotlinx.serialization.Serializable
 import kr.co.gogumac.playgroundforandroid.ui.theme.PlaygroundForAndroidTheme
 
 
+@Serializable
+object ScreenA
+
+@Serializable
+data class ScreenB(val arg:String)
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +29,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     val navController= rememberNavController()
+
                 }
             }
         }
