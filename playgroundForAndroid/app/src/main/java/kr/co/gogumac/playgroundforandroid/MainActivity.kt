@@ -74,20 +74,3 @@ fun ScreenC(modifier: Modifier=Modifier){
         .background(color = Color.Blue)){
     }
 }
-
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    PlaygroundForAndroidTheme {
-        Greeting("Android")
-    }
-}
