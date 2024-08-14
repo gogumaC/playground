@@ -66,7 +66,7 @@ fun ScreenB(modifier: Modifier=Modifier){
 @Composable
 fun ScreenC(modifier: Modifier=Modifier){
     val context= LocalContext.current
-    BackHandler {
+    BackHandler(enabled = false) {
         Toast.makeText(context,"ScreenC",Toast.LENGTH_SHORT).show()
     }
     Box(modifier = modifier
